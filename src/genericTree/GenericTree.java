@@ -57,19 +57,6 @@ public class GenericTree {
 		}
 		return max;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	public int max(Node root) {
 		if(root.children.size()==0)return root.data;
 		int max = root.data;
