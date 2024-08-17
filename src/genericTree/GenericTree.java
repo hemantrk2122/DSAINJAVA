@@ -211,6 +211,31 @@ public class GenericTree {
 		return ++m + ++n;
 	}
 
+	public Boolean isSimilar(Node root, Node root2) {
+		
+		return true;
+	}
+
+	public int getDiameter(Node root) {
+		int mh = -1;
+		int smh = -1;
+		int dia = -1;
+		for(Node node:root.children) {
+			int h = height(node);
+			if(h>mh) {
+				smh = mh;
+				mh = h;
+			}else if(h>smh) {
+				smh = h;
+			}
+		}
+		dia = mh+smh+2;
+		for(Node node:root.children) {
+			dia = Math.max(dia, getDiameter(node));
+		}
+		return dia;
+	}
+
 	
 
 }

@@ -65,6 +65,32 @@ public class Main {
 		System.out.println("13. Distance between nodes 110 & 100: "+genericTree.distance(root, 110,100));
 		System.out.println();
 		
+		System.out.println("14. Are Tree Similar in shape: Not implemented");
+		System.out.println();
+		
+		System.out.println("15. Are Tree mirror in shape: Not implemented");
+		System.out.println();
+		
+		System.out.println("16. MultiSolver: Not implemented");
+		System.out.println();
+		
+		System.out.println("17. Predecessor and Successor of a Node: Not implemented");
+		System.out.println();
+		
+		System.out.println("18. Ceil and Floor in Generic Tree: Not implemented");
+		System.out.println();
+		
+		System.out.println("19. Kth largest element in Generic Tree: Not implemented");
+		System.out.println();
+		
+		System.out.println("20. Diameter of a Generic Tree "+genericTree.getDiameter(root));
+		System.out.println();
+		
+		System.out.println("21. Node with max subtree sum in Generic Tree: Not implemented");
+		System.out.println();
+		
+		System.out.println("22. Iteratice Preorder and Postorder of a Generic Tree: Not implemented");
+		System.out.println();
 		
 	}
 	
