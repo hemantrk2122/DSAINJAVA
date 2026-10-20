@@ -1,0 +1,25 @@
+package t05_genericTree;
+
+// 10. Find in a Generic Tree (LC 257)
+public class Q10_FindInGenericTree {
+
+	public static boolean find(Node node, int data) {
+		if(node.data == data)return true;
+		boolean ans = false;
+		for(Node child:node.children) {
+			ans = ans||find(child,data);
+			if(ans) {
+//				Wherever we are returning true add arrayList to the answer
+				System.out.print(child.data+" ");
+				return true;
+			}
+		}
+		return false;
+	}
+
+	public static void main(String[] args) throws Exception {
+		Node root = GenericTreeUtils.build("input2");
+		System.out.println("    110: "+find(root,110));
+		System.out.println("    130: "+find(root,130));
+	}
+}
