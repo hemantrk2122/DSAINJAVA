@@ -1,5 +1,7 @@
 package t05_genericTree;
 
+import t00_common.Console;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -49,7 +51,7 @@ public class GenericTreeUtils {
 	}
 
 	// ANSI colours (IntelliJ's Run console and macOS Terminal both support them)
-	private static final String RESET = "\u001B[0m";
+	private static final String RESET = Console.RESTORE; // back to the output colour
 	private static final String ROOT = "\u001B[1;35m";   // bold magenta
 	private static final String NODE = "\u001B[36m";     // cyan
 	private static final String LEAF = "\u001B[32m";     // green

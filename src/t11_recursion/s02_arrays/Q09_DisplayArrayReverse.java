@@ -1,5 +1,7 @@
 package t11_recursion.s02_arrays;
 
+import t00_common.Console;
+
 // 9. Display Array in reverse
 public class Q09_DisplayArrayReverse {
 
@@ -10,6 +12,7 @@ public class Q09_DisplayArrayReverse {
 	}
 
 	public static void main(String[] args) {
+		Console.header("Recursion · 9. Display Array in reverse");
 		int[] arr = {1,2,3,4,5,6,7};
 		printArrayReverse(arr, 0);
 	}

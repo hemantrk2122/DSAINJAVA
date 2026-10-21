@@ -9,6 +9,10 @@ question's number in that topic (`Q01_…`, `Q02_…`), so IntelliJ lists them i
 
 Run from the project root — the Generic Tree inputs are read from `src/t05_genericTree/input` and `input2`.
 
+Output is colourful via `src/t00_common/Console.java`: a title banner per question, `Console.result(label, value)`
+for answers, `Console.check(label, actual, expected)` for ✔/✘ test checks, `Console.section(...)` for sub-headings
+and `Console.todo(...)` on unsolved questions. Anything printed with `System.out` shows in cyan.
+
 ## Binary Search — `src/t01_binarySearch`
 | Question | File |
 |---|---|
@@ -22,6 +26,8 @@ Shared: `Node`, `LinkedListUtils` (make list, print list).
 | LC 876. Middle of the Linked List | `Q01_MiddleOfLinkedList` |
 
 ## Generic Tree — `src/t05_genericTree`
+📊 **Status, bugs and what to practise next:** [src/t05_genericTree/README.md](src/t05_genericTree/README.md)
+
 Shared: `Node`, `GenericTreeUtils` (read input, construct, display, clone).
 
 | # | Question | File |

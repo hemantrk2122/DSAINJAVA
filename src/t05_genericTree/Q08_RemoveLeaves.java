@@ -1,5 +1,7 @@
 package t05_genericTree;
 
+import t00_common.Console;
+
 import java.util.ArrayList;
 
 // 8. Remove leaves from a Generic Tree (LC 1325)
@@ -17,9 +19,10 @@ public class Q08_RemoveLeaves {
 	}
 
 	public static void main(String[] args) throws Exception {
+		Console.header("Generic Tree · 8. Remove leaves from a Generic Tree (LC 1325)");
 		Node root = GenericTreeUtils.build("input2");
 		GenericTreeUtils.display(root);
-		System.out.println("\nRemove Leaves: ");
+		Console.section("Remove Leaves");
 		removeLeaves(root);
 		GenericTreeUtils.display(root);
 	}

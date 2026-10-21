@@ -1,5 +1,7 @@
 package t05_genericTree;
 
+import t00_common.Console;
+
 // 2. Max in a Generic Tree
 public class Q02_MaxInGenericTree {
 
@@ -17,8 +19,9 @@ public class Q02_MaxInGenericTree {
 	}
 
 	public static void main(String[] args) throws Exception {
+		Console.header("Generic Tree · 2. Max in a Generic Tree");
 		Node root = GenericTreeUtils.build("input");
 		GenericTreeUtils.display(root);
-		System.out.println("Maximum in Generic Tree: "+max(root));
+		Console.result("Maximum in Generic Tree", max(root));
 	}
 }

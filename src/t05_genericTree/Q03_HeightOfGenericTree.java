@@ -1,5 +1,7 @@
 package t05_genericTree;
 
+import t00_common.Console;
+
 // 3. Height of a Generic Tree
 public class Q03_HeightOfGenericTree {
 
@@ -13,8 +15,9 @@ public class Q03_HeightOfGenericTree {
 	}
 
 	public static void main(String[] args) throws Exception {
+		Console.header("Generic Tree · 3. Height of a Generic Tree");
 		Node root = GenericTreeUtils.build("input");
 		GenericTreeUtils.display(root);
-		System.out.println("Height of Generic Tree is: "+height(root));
+		Console.result("Height of Generic Tree is", height(root));
 	}
 }

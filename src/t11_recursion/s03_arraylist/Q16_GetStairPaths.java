@@ -1,5 +1,7 @@
 package t11_recursion.s03_arraylist;
 
+import t00_common.Console;
+
 import java.util.ArrayList;
 
 // 16. Get Stair Paths
@@ -33,6 +35,7 @@ public class Q16_GetStairPaths {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(getStairPaths(4, 0));
+		Console.header("Recursion · 16. Get Stair Paths");
+		Console.result("getStairPaths(4, 0)", getStairPaths(4, 0));
 	}
 }

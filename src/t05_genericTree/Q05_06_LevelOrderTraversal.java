@@ -1,5 +1,7 @@
 package t05_genericTree;
 
+import t00_common.Console;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -24,6 +26,7 @@ public class Q05_06_LevelOrderTraversal {
 	}
 
 	public static void main(String[] args) throws Exception {
+		Console.header("Generic Tree · 5, 6. Level order traversal (BFS) + level order linewise (LC 429)");
 		Node root = GenericTreeUtils.build("input");
 		levelOrderTravarsal(root);
 	}

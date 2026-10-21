@@ -1,5 +1,7 @@
 package t11_recursion.s02_arrays;
 
+import t00_common.Console;
+
 // 10. Max of an Array
 public class Q10_MaxOfArray {
 
@@ -13,7 +15,8 @@ public class Q10_MaxOfArray {
 	}
 
 	public static void main(String[] args) {
+		Console.header("Recursion · 10. Max of an Array");
 		int[] arr = {1,2,3,4,5,6,7};
-		System.out.println("Maximum in the array is: "+maxInAnArray(arr,0));
+		Console.result("Maximum in the array is", maxInAnArray(arr,0));
 	}
 }

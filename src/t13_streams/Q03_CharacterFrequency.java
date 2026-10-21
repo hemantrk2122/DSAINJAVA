@@ -1,5 +1,7 @@
 package t13_streams;
 
+import t00_common.Console;
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -12,10 +14,11 @@ public class Q03_CharacterFrequency {
 
 
 	public static void main(String[] args) {
+		Console.header("Java Streams · Count each character of a string (streams vs HashMap)");
 		String name = "hemantranjan";
 		Map<String,Long> charMap = Arrays.stream(name.split(""))
 		.collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
-		System.out.println(charMap);
+		Console.result("charMap", charMap);
 		Map<Character,Integer> map = new HashMap<>();
 		char[] charArray = name.toCharArray();
 		for(int i = 0;i<charArray.length;i++) {
@@ -26,6 +29,6 @@ public class Q03_CharacterFrequency {
 				map.put(ch, map.get(ch)+1);
 			}
 		}
-		System.out.println(map);
+		Console.result("map", map);
 	}
 }

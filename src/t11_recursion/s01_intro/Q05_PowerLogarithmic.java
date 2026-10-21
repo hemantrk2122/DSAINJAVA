@@ -1,5 +1,7 @@
 package t11_recursion.s01_intro;
 
+import t00_common.Console;
+
 // 5. Power (Logarithmic)
 public class Q05_PowerLogarithmic {
 
@@ -15,7 +17,8 @@ public class Q05_PowerLogarithmic {
 	}
 
 	public static void main(String[] args) {
+		Console.header("Recursion · 5. Power (Logarithmic)");
 		int n = 2, x = 5; // sample input
-		System.out.println(powerLogarithmic(n, x));
+		Console.result("powerLogarithmic(n, x)", powerLogarithmic(n, x));
 	}
 }

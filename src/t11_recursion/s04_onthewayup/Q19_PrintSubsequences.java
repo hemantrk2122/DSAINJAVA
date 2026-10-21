@@ -1,5 +1,7 @@
 package t11_recursion.s04_onthewayup;
 
+import t00_common.Console;
+
 // 19. Print all Subsequences
 public class Q19_PrintSubsequences {
 
@@ -16,6 +18,7 @@ public class Q19_PrintSubsequences {
 	}
 
 	public static void main(String[] args) {
+		Console.header("Recursion · 19. Print all Subsequences");
 		getSubSequences("abc", "");
 	}
 }

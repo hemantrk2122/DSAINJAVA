@@ -1,5 +1,7 @@
 package t11_recursion.s05_backtracking;
 
+import t00_common.Console;
+
 // 28. N Queens
 public class Q28_NQueens {
 
@@ -37,6 +39,7 @@ public class Q28_NQueens {
 	}
 
 	public static void main(String[] args) {
+		Console.header("Recursion · 28. N Queens");
 		int n = 4;
 		boolean[][] vis = new boolean[n][n];
 		printNQueens(vis, "", 0);

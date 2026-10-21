@@ -1,5 +1,7 @@
 package t11_recursion.s01_intro;
 
+import t00_common.Console;
+
 // 3. Print Q03_Factorial
 public class Q03_Factorial {
 
@@ -9,7 +11,8 @@ public class Q03_Factorial {
 	}
 
 	public static void main(String[] args) {
+		Console.header("Recursion · 3. Print Q03_Factorial");
 		int n = 5; // sample input
-		System.out.println(factorial(n));
+		Console.result("factorial(n)", factorial(n));
 	}
 }

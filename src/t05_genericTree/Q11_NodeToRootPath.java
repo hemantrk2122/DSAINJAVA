@@ -1,5 +1,7 @@
 package t05_genericTree;
 
+import t00_common.Console;
+
 import java.util.ArrayList;
 
 // 11. Node to Root path
@@ -22,8 +24,9 @@ public class Q11_NodeToRootPath {
 	}
 
 	public static void main(String[] args) throws Exception {
+		Console.header("Generic Tree · 11. Node to Root path");
 		Node root = GenericTreeUtils.build("input2");
-		System.out.println("Node 110 to root path: "+nodeToRoot(root, 110));
-		System.out.println("Node 90 to root path: "+nodeToRoot(root, 90));
+		Console.result("Node 110 to root path", nodeToRoot(root, 110));
+		Console.result("Node 90 to root path", nodeToRoot(root, 90));
 	}
 }

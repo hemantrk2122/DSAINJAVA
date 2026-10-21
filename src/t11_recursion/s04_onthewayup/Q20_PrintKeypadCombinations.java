@@ -1,5 +1,7 @@
 package t11_recursion.s04_onthewayup;
 
+import t00_common.Console;
+
 // 20. Print Keypad combinations
 public class Q20_PrintKeypadCombinations {
 
@@ -19,6 +21,7 @@ public class Q20_PrintKeypadCombinations {
 	}
 
 	public static void main(String[] args) {
+		Console.header("Recursion · 20. Print Keypad combinations");
 		getKPC("789","");
 	}
 }

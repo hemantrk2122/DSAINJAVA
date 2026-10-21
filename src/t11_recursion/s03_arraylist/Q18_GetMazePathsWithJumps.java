@@ -1,5 +1,7 @@
 package t11_recursion.s03_arraylist;
 
+import t00_common.Console;
+
 import java.util.ArrayList;
 
 // 18. Get all paths in a Maze with jumps (from 0,0 -> n-1,m-1)
@@ -32,6 +34,7 @@ public class Q18_GetMazePathsWithJumps {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(getMazePathsWithJump(0, 0, 2, 2));
+		Console.header("Recursion · 18. Get all paths in a Maze with jumps (from 0,0 -> n-1,m-1)");
+		Console.result("getMazePathsWithJump(0, 0, 2, 2)", getMazePathsWithJump(0, 0, 2, 2));
 	}
 }

@@ -1,5 +1,7 @@
 package t11_recursion.s05_backtracking;
 
+import t00_common.Console;
+
 // 29. Knight's Tour
 public class Q29_KnightsTour {
 
@@ -33,6 +35,7 @@ public class Q29_KnightsTour {
 	}
 
 	public static void main(String[] args) {
+		Console.header("Recursion · 29. Knight's Tour");
 		printKnightTour(new int[5][5], 0, 0, 0);
 	}
 }

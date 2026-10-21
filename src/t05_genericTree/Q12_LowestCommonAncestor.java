@@ -1,5 +1,7 @@
 package t05_genericTree;
 
+import t00_common.Console;
+
 import java.util.ArrayList;
 
 // 12. Lowest Common Ancestor (LC 236)
@@ -20,7 +22,8 @@ public class Q12_LowestCommonAncestor {
 	}
 
 	public static void main(String[] args) throws Exception {
+		Console.header("Generic Tree · 12. Lowest Common Ancestor (LC 236)");
 		Node root = GenericTreeUtils.build("input2");
-		System.out.println("LCA of 110 and 90 is: "+lca(root,110,90));
+		Console.result("LCA of 110 and 90 is", lca(root,110,90));
 	}
 }

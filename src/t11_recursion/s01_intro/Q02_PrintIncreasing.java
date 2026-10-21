@@ -1,5 +1,7 @@
 package t11_recursion.s01_intro;
 
+import t00_common.Console;
+
 // 2. Print Increasing
 public class Q02_PrintIncreasing {
 
@@ -10,6 +12,7 @@ public class Q02_PrintIncreasing {
 	}
 
 	public static void main(String[] args) {
+		Console.header("Recursion · 2. Print Increasing");
 		int n = 5; // sample input
 		printIncreasing(n);
 	}

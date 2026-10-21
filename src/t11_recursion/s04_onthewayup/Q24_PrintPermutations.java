@@ -1,5 +1,7 @@
 package t11_recursion.s04_onthewayup;
 
+import t00_common.Console;
+
 // 24. Print Permutations
 public class Q24_PrintPermutations {
 
@@ -15,6 +17,7 @@ public class Q24_PrintPermutations {
 	}
 
 	public static void main(String[] args) {
+		Console.header("Recursion · 24. Print Permutations");
 		printPermutations("abc","");
 	}
 }

@@ -1,5 +1,7 @@
 package t05_genericTree;
 
+import t00_common.Console;
+
 // 4. Pre & Post order Traversals
 public class Q04_PreAndPostOrderTraversal {
 
@@ -15,6 +17,7 @@ public class Q04_PreAndPostOrderTraversal {
 	}
 
 	public static void main(String[] args) throws Exception {
+		Console.header("Generic Tree · 4. Pre & Post order Traversals");
 		Node root = GenericTreeUtils.build("input");
 		traversal(root);
 	}

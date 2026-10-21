@@ -1,5 +1,7 @@
 package t11_recursion.s04_onthewayup;
 
+import t00_common.Console;
+
 // 25. Print Encodings
 public class Q25_PrintEncodings {
 
@@ -30,6 +32,7 @@ public class Q25_PrintEncodings {
 	}
 
 	public static void main(String[] args) {
+		Console.header("Recursion · 25. Print Encodings");
 		printEncoding("1234", "");
 	}
 }

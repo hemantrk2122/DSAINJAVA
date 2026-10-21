@@ -1,5 +1,7 @@
 package t05_genericTree;
 
+import t00_common.Console;
+
 import java.util.ArrayList;
 
 // 13. Distance between two nodes in a Generic Tree
@@ -20,7 +22,8 @@ public class Q13_DistanceBetweenNodes {
 	}
 
 	public static void main(String[] args) throws Exception {
+		Console.header("Generic Tree · 13. Distance between two nodes in a Generic Tree");
 		Node root = GenericTreeUtils.build("input2");
-		System.out.println("Distance between nodes 110 & 100: "+distance(root, 110,100));
+		Console.result("Distance between nodes 110 & 100", distance(root, 110,100));
 	}
 }

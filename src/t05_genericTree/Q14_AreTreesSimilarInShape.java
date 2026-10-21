@@ -1,5 +1,7 @@
 package t05_genericTree;
 
+import t00_common.Console;
+
 // 14. Are trees similar in shape? (TODO: not solved yet)
 public class Q14_AreTreesSimilarInShape {
 
@@ -9,8 +11,10 @@ public class Q14_AreTreesSimilarInShape {
 	}
 
 	public static void main(String[] args) throws Exception {
+		Console.header("Generic Tree · 14. Are trees similar in shape?");
+		Console.todo("Not solved yet: write your solution above, then run again.");
 		Node root = GenericTreeUtils.build("input2");
 		GenericTreeUtils.display(root);
-		System.out.println("Similar in shape (with itself): "+isSimilar(root, GenericTreeUtils.clone(root)));
+		Console.result("Similar in shape (with itself)", isSimilar(root, GenericTreeUtils.clone(root)));
 	}
 }

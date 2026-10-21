@@ -1,5 +1,7 @@
 package t05_genericTree;
 
+import t00_common.Console;
+
 // 9. Linearize a Generic Tree (LC 114)
 public class Q09_LinearizeGenericTree {
 
@@ -17,6 +19,7 @@ public class Q09_LinearizeGenericTree {
 	}
 
 	public static void main(String[] args) throws Exception {
+		Console.header("Generic Tree · 9. Linearize a Generic Tree (LC 114)");
 		Node root = GenericTreeUtils.build("input2");
 		Node node = GenericTreeUtils.clone(root);
 		linearize(node);

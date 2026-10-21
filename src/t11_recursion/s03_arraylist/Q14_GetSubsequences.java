@@ -1,5 +1,7 @@
 package t11_recursion.s03_arraylist;
 
+import t00_common.Console;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,7 +31,8 @@ public class Q14_GetSubsequences {
 	}
 
 	public static void main(String[] args) {
+		Console.header("Recursion · 14. Get all Subsequences");
 		String str = "abc";
-		System.out.println(getAllSubstrings(str));
+		Console.result("getAllSubstrings(str)", getAllSubstrings(str));
 	}
 }

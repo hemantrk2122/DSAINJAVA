@@ -1,5 +1,7 @@
 package t11_recursion.s04_onthewayup;
 
+import t00_common.Console;
+
 // 22. Print all paths in a Maze (from 0,0 -> n-1,m-1)
 public class Q22_PrintMazePaths {
 
@@ -17,6 +19,7 @@ public class Q22_PrintMazePaths {
 	}
 
 	public static void main(String[] args) {
+		Console.header("Recursion · 22. Print all paths in a Maze (from 0,0 -> n-1,m-1)");
 		mazePaths(0, 0, 2, 2, "");
 	}
 }

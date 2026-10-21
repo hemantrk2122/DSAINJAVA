@@ -1,5 +1,7 @@
 package t11_recursion.s02_arrays;
 
+import t00_common.Console;
+
 // 11. First Index
 public class Q11_FirstIndex {
 
@@ -11,7 +13,8 @@ public class Q11_FirstIndex {
 	}
 
 	public static void main(String[] args) {
+		Console.header("Recursion · 11. First Index");
 		int[] array = {1,2,3,3,4,3,4,5};
-		System.out.println("First Index of "+3+" in the array is: "+firstIndex(array,0,3));
+		Console.result("First index of " + 3, firstIndex(array,0,3));
 	}
 }

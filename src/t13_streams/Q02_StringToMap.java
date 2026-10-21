@@ -1,5 +1,7 @@
 package t13_streams;
 
+import t00_common.Console;
+
 import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -10,6 +12,7 @@ public class Q02_StringToMap {
 
 
 	public static void main(String[] args) {
+		Console.header("Java Streams · Convert \"1:one,2:two,3:three\" into a map using streams");
 		//i/o: "1:one,2:two,3:three"
 		//o/p: {{1:one},{2:two},{3:three}}
 		String input = "1:one,2:two,3:three";

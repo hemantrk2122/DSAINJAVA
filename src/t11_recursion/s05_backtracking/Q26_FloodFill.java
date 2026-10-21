@@ -1,5 +1,7 @@
 package t11_recursion.s05_backtracking;
 
+import t00_common.Console;
+
 // 26. Flood fill
 public class Q26_FloodFill {
 
@@ -21,6 +23,7 @@ public class Q26_FloodFill {
 	}
 
 	public static void main(String[] args) {
+		Console.header("Recursion · 26. Flood fill");
 		int[][] maze = {{0,0,1},{1,0,1},{1,0,0}};
 		int n = maze.length;
 		int m = maze[0].length;

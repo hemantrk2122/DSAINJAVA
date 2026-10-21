@@ -1,5 +1,7 @@
 package t05_genericTree;
 
+import t00_common.Console;
+
 import java.util.List;
 
 // 7. Mirror of a Generic Tree (LC 101)
@@ -24,9 +26,10 @@ public class Q07_MirrorOfGenericTree {
 	}
 
 	public static void main(String[] args) throws Exception {
+		Console.header("Generic Tree · 7. Mirror of a Generic Tree (LC 101)");
 		Node root = GenericTreeUtils.build("input2");
 		GenericTreeUtils.display(root);
-		System.out.println("\nMirror of a GT: ");
+		Console.section("Mirror of a GT");
 		mirror(root);
 		GenericTreeUtils.display(root);
 	}

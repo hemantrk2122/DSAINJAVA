@@ -1,5 +1,7 @@
 package t05_genericTree;
 
+import t00_common.Console;
+
 // 10. Find in a Generic Tree (LC 257)
 public class Q10_FindInGenericTree {
 
@@ -18,8 +20,9 @@ public class Q10_FindInGenericTree {
 	}
 
 	public static void main(String[] args) throws Exception {
+		Console.header("Generic Tree · 10. Find in a Generic Tree (LC 257)");
 		Node root = GenericTreeUtils.build("input2");
-		System.out.println("    110: "+find(root,110));
-		System.out.println("    130: "+find(root,130));
+		Console.result("110", find(root,110));
+		Console.result("130", find(root,130));
 	}
 }

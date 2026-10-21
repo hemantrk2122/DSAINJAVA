@@ -1,5 +1,7 @@
 package t05_genericTree;
 
+import t00_common.Console;
+
 // 20. Diameter of a Generic Tree
 public class Q20_DiameterOfGenericTree {
 
@@ -24,7 +26,8 @@ public class Q20_DiameterOfGenericTree {
 	}
 
 	public static void main(String[] args) throws Exception {
+		Console.header("Generic Tree · 20. Diameter of a Generic Tree");
 		Node root = GenericTreeUtils.build("input2");
-		System.out.println("Diameter of a Generic Tree "+getDiameter(root));
+		Console.result("Diameter of a Generic Tree", getDiameter(root));
 	}
 }

@@ -1,5 +1,7 @@
 package t11_recursion.s02_arrays;
 
+import t00_common.Console;
+
 // 12. Last Index
 public class Q12_LastIndex {
 
@@ -17,7 +19,8 @@ public class Q12_LastIndex {
 	}
 
 	public static void main(String[] args) {
+		Console.header("Recursion · 12. Last Index");
 		int[] array = {1,2,3,3,4,3,4,5};
-		System.out.println("Last Index of "+3+" in the array is: "+lastIndex(array,0,3));
+		Console.result("Last index of " + 3, lastIndex(array,0,3));
 	}
 }

@@ -1,5 +1,7 @@
 package t01_binarySearch;
 
+import t00_common.Console;
+
 // LC 1011. Capacity To Ship Packages Within D Days
 public class Q06_CapacityToShipPackagesWithinDDays {
 
@@ -30,8 +32,9 @@ public class Q06_CapacityToShipPackagesWithinDDays {
     }
 
 	public static void main(String[] args) {
-		System.out.println(shipWithinDays(new int[]{1,2,3,4,5,6,7,8,9,10}, 5)); // expected 15
-		System.out.println(shipWithinDays(new int[]{3,2,2,4,1,4}, 3));            // expected 6
-		System.out.println(shipWithinDays(new int[]{1,2,3,1,1}, 4));              // expected 3
+		Console.header("Binary Search · LC 1011. Capacity To Ship Packages Within D Days");
+		Console.check("shipWithinDays(new int[]{1,2,3,4,5,6,7,8,9,10}, 5)", shipWithinDays(new int[]{1,2,3,4,5,6,7,8,9,10}, 5), 15);
+		Console.check("shipWithinDays(new int[]{3,2,2,4,1,4}, 3)", shipWithinDays(new int[]{3,2,2,4,1,4}, 3), 6);
+		Console.check("shipWithinDays(new int[]{1,2,3,1,1}, 4)", shipWithinDays(new int[]{1,2,3,1,1}, 4), 3);
 	}
 }

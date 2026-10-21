@@ -1,5 +1,7 @@
 package t11_recursion.s04_onthewayup;
 
+import t00_common.Console;
+
 // 21. Print Stair Paths
 public class Q21_PrintStairPaths {
 
@@ -17,6 +19,7 @@ public class Q21_PrintStairPaths {
 	}
 
 	public static void main(String[] args) {
+		Console.header("Recursion · 21. Print Stair Paths");
 		stairPaths(3,"");
 	}
 }

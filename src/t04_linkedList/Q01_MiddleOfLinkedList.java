@@ -1,5 +1,7 @@
 package t04_linkedList;
 
+import t00_common.Console;
+
 // LC 876. Middle of the Linked List (fast & slow pointers)
 public class Q01_MiddleOfLinkedList {
 
@@ -14,10 +16,11 @@ public class Q01_MiddleOfLinkedList {
 	}
 
 	public static void main(String[] args) {
+		Console.header("Linked List · LC 876. Middle of the Linked List (fast & slow pointers)");
 		int[] arr = {2,3,4,5,6,9,7,10,12};
 		Node head = LinkedListUtils.makeLinkedList(arr);
 		LinkedListUtils.printLinkedList(head);
 		System.out.println();
-		System.out.println(findMiddle(head));
+		Console.result("findMiddle(head)", findMiddle(head));
 	}
 }

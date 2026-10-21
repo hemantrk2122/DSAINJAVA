@@ -1,5 +1,7 @@
 package t11_recursion.s01_intro;
 
+import t00_common.Console;
+
 // 7. Tower Of Hanoi
 public class Q07_TowerOfHanoi {
 
@@ -11,6 +13,7 @@ public class Q07_TowerOfHanoi {
 	}
 
 	public static void main(String[] args) {
+		Console.header("Recursion · 7. Tower Of Hanoi");
 		toh(3,"A","B","C");
 	}
 }

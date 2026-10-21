@@ -1,5 +1,7 @@
 package t11_recursion.s02_arrays;
 
+import t00_common.Console;
+
 // 13. All indices in an Array
 public class Q13_AllIndices {
 
@@ -18,6 +20,7 @@ public class Q13_AllIndices {
 	}
 
 	public static void main(String[] args) {
+		Console.header("Recursion · 13. All indices in an Array");
 		int[] array = {1,2,3,3,4,3,4,5};
 		int[] ans = findAllIndices(array, 0, 3, 0);
 		for(var ele:ans)System.out.print(ele+" ");

@@ -1,5 +1,7 @@
 package t11_recursion.s03_arraylist;
 
+import t00_common.Console;
+
 import java.util.ArrayList;
 
 // 17. Get all paths in a Maze (from 0,0 -> n-1,m-1)
@@ -23,6 +25,7 @@ public class Q17_GetMazePaths {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(getMazePaths(0, 0, 3, 3));
+		Console.header("Recursion · 17. Get all paths in a Maze (from 0,0 -> n-1,m-1)");
+		Console.result("getMazePaths(0, 0, 3, 3)", getMazePaths(0, 0, 3, 3));
 	}
 }
