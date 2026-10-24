@@ -2,6 +2,8 @@
 
 Status of the 22 Generic Tree questions from the Prep Ledger.
 
+> **Two copies of every question.** [`solution/`](solution) holds the worked answers (linked in the table below); [`practice/`](practice) holds fill-in-the-blank stubs — same signatures, a problem statement, and a `main` that self-grades with `Console.check` on run. Attempt from `practice/` first, peek at `solution/` only if stuck.
+
 | ✅ Correct | ❌ Has a bug | ⏳ Not started |
 |:---:|:---:|:---:|
 | **9** | **4** | **9** |
@@ -15,28 +17,28 @@ Status of the 22 Generic Tree questions from the Prep Ledger.
 
 | # | Question | File | Status |
 |:-:|---|---|:-:|
-| 1 | Size | [`Q01_SizeOfGenericTree`](Q01_SizeOfGenericTree.java) | ✅ |
-| 2 | Max | [`Q02_MaxInGenericTree`](Q02_MaxInGenericTree.java) | ✅ |
-| 3 | Height | [`Q03_HeightOfGenericTree`](Q03_HeightOfGenericTree.java) | ❌ [bug](#1-height--diameter) |
-| 4 | Pre & Post order | [`Q04_PreAndPostOrderTraversal`](Q04_PreAndPostOrderTraversal.java) | ✅ |
-| 5 | Level order (BFS) | [`Q05_06_LevelOrderTraversal`](Q05_06_LevelOrderTraversal.java) | ✅ |
+| 1 | Size | [`Q01_SizeOfGenericTree`](solution/Q01_SizeOfGenericTree.java) | ✅ |
+| 2 | Max | [`Q02_MaxInGenericTree`](solution/Q02_MaxInGenericTree.java) | ✅ |
+| 3 | Height | [`Q03_HeightOfGenericTree`](solution/Q03_HeightOfGenericTree.java) | ❌ [bug](#1-height--diameter) |
+| 4 | Pre & Post order | [`Q04_PreAndPostOrderTraversal`](solution/Q04_PreAndPostOrderTraversal.java) | ✅ |
+| 5 | Level order (BFS) | [`Q05_06_LevelOrderTraversal`](solution/Q05_06_LevelOrderTraversal.java) | ✅ |
 | 6 | Level order linewise | same file | 🟡 linewise done · zigzag (LC 103) not done |
-| 7 | Mirror | [`Q07_MirrorOfGenericTree`](Q07_MirrorOfGenericTree.java) | ✅ |
-| 8 | Remove leaves | [`Q08_RemoveLeaves`](Q08_RemoveLeaves.java) | ✅ |
-| 9 | Linearize | [`Q09_LinearizeGenericTree`](Q09_LinearizeGenericTree.java) | ✅ [O(n²)](#3-linearize-works-but-slow) |
-| 10 | Find | [`Q10_FindInGenericTree`](Q10_FindInGenericTree.java) | ✅ |
-| 11 | Node to Root path | [`Q11_NodeToRootPath`](Q11_NodeToRootPath.java) | ✅ |
-| 12 | Lowest Common Ancestor | [`Q12_LowestCommonAncestor`](Q12_LowestCommonAncestor.java) | ❌ [bug](#2-lca--distance) |
-| 13 | Distance between nodes | [`Q13_DistanceBetweenNodes`](Q13_DistanceBetweenNodes.java) | ❌ [bug](#2-lca--distance) |
-| 14 | Similar in shape | [`Q14_AreTreesSimilarInShape`](Q14_AreTreesSimilarInShape.java) | ⏳ |
-| 15 | Mirror in shape | [`Q15_AreTreesMirrorInShape`](Q15_AreTreesMirrorInShape.java) | ⏳ |
-| 16 | Multi Solver | [`Q16_MultiSolver`](Q16_MultiSolver.java) | ⏳ |
-| 17 | Predecessor & Successor | [`Q17_PredecessorAndSuccessor`](Q17_PredecessorAndSuccessor.java) | ⏳ |
-| 18 | Ceil & Floor | [`Q18_CeilAndFloor`](Q18_CeilAndFloor.java) | ⏳ |
-| 19 | Kth largest | [`Q19_KthLargestElement`](Q19_KthLargestElement.java) | ⏳ |
-| 20 | Diameter | [`Q20_DiameterOfGenericTree`](Q20_DiameterOfGenericTree.java) | ❌ [uses buggy Height](#1-height--diameter) |
-| 21 | Node with max subtree sum | [`Q21_NodeWithMaxSubtreeSum`](Q21_NodeWithMaxSubtreeSum.java) | ⏳ |
-| 22 | Iterative pre & post order | [`Q22_IterativePreAndPostOrder`](Q22_IterativePreAndPostOrder.java) | ⏳ |
+| 7 | Mirror | [`Q07_MirrorOfGenericTree`](solution/Q07_MirrorOfGenericTree.java) | ✅ |
+| 8 | Remove leaves | [`Q08_RemoveLeaves`](solution/Q08_RemoveLeaves.java) | ✅ |
+| 9 | Linearize | [`Q09_LinearizeGenericTree`](solution/Q09_LinearizeGenericTree.java) | ✅ [O(n²)](#3-linearize-works-but-slow) |
+| 10 | Find | [`Q10_FindInGenericTree`](solution/Q10_FindInGenericTree.java) | ✅ |
+| 11 | Node to Root path | [`Q11_NodeToRootPath`](solution/Q11_NodeToRootPath.java) | ✅ |
+| 12 | Lowest Common Ancestor | [`Q12_LowestCommonAncestor`](solution/Q12_LowestCommonAncestor.java) | ❌ [bug](#2-lca--distance) |
+| 13 | Distance between nodes | [`Q13_DistanceBetweenNodes`](solution/Q13_DistanceBetweenNodes.java) | ❌ [bug](#2-lca--distance) |
+| 14 | Similar in shape | [`Q14_AreTreesSimilarInShape`](solution/Q14_AreTreesSimilarInShape.java) | ⏳ |
+| 15 | Mirror in shape | [`Q15_AreTreesMirrorInShape`](solution/Q15_AreTreesMirrorInShape.java) | ⏳ |
+| 16 | Multi Solver | [`Q16_MultiSolver`](solution/Q16_MultiSolver.java) | ⏳ |
+| 17 | Predecessor & Successor | [`Q17_PredecessorAndSuccessor`](solution/Q17_PredecessorAndSuccessor.java) | ⏳ |
+| 18 | Ceil & Floor | [`Q18_CeilAndFloor`](solution/Q18_CeilAndFloor.java) | ⏳ |
+| 19 | Kth largest | [`Q19_KthLargestElement`](solution/Q19_KthLargestElement.java) | ⏳ |
+| 20 | Diameter | [`Q20_DiameterOfGenericTree`](solution/Q20_DiameterOfGenericTree.java) | ❌ [uses buggy Height](#1-height--diameter) |
+| 21 | Node with max subtree sum | [`Q21_NodeWithMaxSubtreeSum`](solution/Q21_NodeWithMaxSubtreeSum.java) | ⏳ |
+| 22 | Iterative pre & post order | [`Q22_IterativePreAndPostOrder`](solution/Q22_IterativePreAndPostOrder.java) | ⏳ |
 
 ---
 

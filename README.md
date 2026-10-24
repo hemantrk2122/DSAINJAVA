@@ -28,7 +28,11 @@ Shared: `Node`, `LinkedListUtils` (make list, print list).
 ## Generic Tree — `src/t05_genericTree`
 📊 **Status, bugs and what to practise next:** [src/t05_genericTree/README.md](src/t05_genericTree/README.md)
 
-Shared: `Node`, `GenericTreeUtils` (read input, construct, display, clone).
+Split into two subpackages: `src/t05_genericTree/solution/` (worked answers, listed below) and
+`src/t05_genericTree/practice/` (fill-in-the-blank stubs that self-grade with `Console.check` on run).
+The `input`/`input2` data files stay in `src/t05_genericTree/`.
+
+Shared (in `solution/`): `Node`, `GenericTreeUtils` (read input, construct, display, clone).
 
 | # | Question | File |
 |---|---|---|
