@@ -18,5 +18,10 @@ public class Q13_DistanceBetweenNodes {
 		Console.header("Generic Tree · 13. Distance between two nodes  (PRACTICE)");
 		Node root = GenericTreeUtils.build("input2");
 		Console.check("distance(110, 100)", distance(root, 110, 100), 5);
+
+		Console.section("Edge cases");
+		Console.check("same node (0)", distance(root, 110, 110), 0);
+		Console.check("parent & child (1)", distance(root, 80, 110), 1);
+		Console.check("values > 127 (== trap)", distance(GenericTreeUtils.construct(new int[]{200,300,-1,400,500,-1,-1}), 300, 500), 3);
 	}
 }

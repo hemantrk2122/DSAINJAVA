@@ -24,5 +24,10 @@ public class Q02_MaxInGenericTree {
 		Node root = GenericTreeUtils.build("input");
 		GenericTreeUtils.display(root);
 		Console.check("max(root)", max(root), 60);
+
+		Console.section("Edge cases");
+		Console.check("single node", max(GenericTreeUtils.construct(new int[]{42})), 42);
+		Console.check("root is the largest", max(GenericTreeUtils.construct(new int[]{100,20,-1,30,-1})), 100);
+		Console.check("all negative values", max(GenericTreeUtils.construct(new int[]{-5,-2,-1,-9,-1})), -2);
 	}
 }

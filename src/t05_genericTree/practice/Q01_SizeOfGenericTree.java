@@ -24,5 +24,10 @@ public class Q01_SizeOfGenericTree {
 		Node root = GenericTreeUtils.build("input");
 		GenericTreeUtils.display(root);
 		Console.check("size(root)", size(root), 6);
+
+		Console.section("Edge cases");
+		Console.check("single node", size(GenericTreeUtils.construct(new int[]{42})), 1);
+		Console.check("root has children", size(GenericTreeUtils.construct(new int[]{100,20,-1,30,-1})), 3);
+		Console.check("deep chain", size(GenericTreeUtils.construct(new int[]{5,4,3,2,-1,-1,-1})), 4);
 	}
 }

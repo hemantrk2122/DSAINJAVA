@@ -18,5 +18,9 @@ public class Q21_NodeWithMaxSubtreeSum {
 		Console.header("Generic Tree · 21. Node with maximum subtree sum  (PRACTICE)");
 		Node root = GenericTreeUtils.build("input2");
 		Console.check("maxSubtreeSumNode(root)", maxSubtreeSumNode(root), 10);
+
+		Console.section("Edge cases");
+		Console.check("non-root subtree wins", maxSubtreeSumNode(GenericTreeUtils.construct(new int[]{-50,100,-1})), 100);
+		Console.check("single node", maxSubtreeSumNode(GenericTreeUtils.construct(new int[]{42})), 42);
 	}
 }

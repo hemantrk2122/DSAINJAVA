@@ -18,5 +18,10 @@ public class Q20_DiameterOfGenericTree {
 		Console.header("Generic Tree · 20. Diameter of a Generic Tree  (PRACTICE)");
 		Node root = GenericTreeUtils.build("input2");
 		Console.check("getDiameter(root)", getDiameter(root), 5);
+
+		Console.section("Edge cases");
+		Console.check("single node (0)", getDiameter(GenericTreeUtils.construct(new int[]{42})), 0);
+		Console.check("deep chain", getDiameter(GenericTreeUtils.construct(new int[]{5,4,3,2,-1,-1,-1})), 3);
+		Console.check("two leaves under root", getDiameter(GenericTreeUtils.construct(new int[]{1,2,-1,3,-1})), 2);
 	}
 }

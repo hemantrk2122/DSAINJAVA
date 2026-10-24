@@ -18,5 +18,9 @@ public class Q19_KthLargestElement {
 		Console.header("Generic Tree · 19. Kth largest element  (PRACTICE)");
 		Node root = GenericTreeUtils.build("input2");
 		Console.check("kthLargest(3)", kthLargest(root, 3), 100);
+
+		Console.section("Edge cases");
+		Console.check("largest (k=1)", kthLargest(root, 1), 120);
+		Console.check("single node", kthLargest(GenericTreeUtils.construct(new int[]{42}), 1), 42);
 	}
 }
