@@ -3,8 +3,8 @@ package t05_genericTree.solution;
 import java.util.ArrayList;
 
 public class Node{
-	int data;
-	ArrayList<Node> children;
+	public int data;
+	public ArrayList<Node> children;
 	
 	Node(){
 		this.data = 0;

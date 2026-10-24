@@ -11,7 +11,12 @@ public class Q02_MaxInGenericTree {
 
 	// TODO: return the maximum value in the tree.
 	public static int max(Node root) {
-		return -1;
+		if(root.children.isEmpty())return root.data;
+		int max = Integer.MIN_VALUE;
+		for(int i = 0;i<root.children.size();i++){
+			max = Math.max(max,max(root.children.get(i)));
+		}
+		return Math.max(root.data,max);
 	}
 
 	public static void main(String[] args) throws Exception {

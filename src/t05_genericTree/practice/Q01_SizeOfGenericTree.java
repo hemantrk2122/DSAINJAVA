@@ -11,7 +11,12 @@ public class Q01_SizeOfGenericTree {
 
 	// TODO: return the number of nodes in the tree rooted at `root`.
 	public static int size(Node root) {
-		return -1;
+		if(root.children.isEmpty())return 1;
+		int size = 0;
+		for(int i = 0;i<root.children.size();i++){
+			size += size(root.children.get(i));
+		}
+		return size+1;
 	}
 
 	public static void main(String[] args) throws Exception {
